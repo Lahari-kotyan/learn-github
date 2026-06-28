@@ -1,0 +1,117 @@
+# Git Installation
+
+## What is Git?
+
+Git is a distributed version control system used to track changes in source code during software development. It helps developers manage versions, collaborate with others, and maintain project history.
+
+---
+
+## Why Install Git?
+
+- Track changes in files
+- Manage different versions of a project
+- Collaborate with other developers
+- Connect local projects with GitHub
+- Easily restore previous versions
+
+---
+
+## Installing Git on Windows
+
+### Step 1: Download Git
+
+Visit the official Git website:
+
+https://git-scm.com/
+
+Click **Download for Windows**.
+
+---
+
+### Step 2: Run the Installer
+
+- Open the downloaded installer.
+- Click **Next** through the installation steps.
+- Keep the default settings unless you have specific requirements.
+- Click **Install**.
+- Click **Finish** when the installation is complete.
+
+---
+
+### Step 3: Verify Installation
+
+Open **Git Bash** or **Command Prompt** and run:
+
+```bash
+git --version
+```
+
+Example Output:
+
+```bash
+git version 2.50.1.windows.1
+```
+
+If you see the version number, Git has been installed successfully.
+
+---
+
+## Configure Git
+
+Set your username:
+
+```bash
+git config --global user.name "Your Name"
+```
+
+Set your email:
+
+```bash
+git config --global user.email "your@email.com"
+```
+
+Check the configuration:
+
+```bash
+git config --list
+```
+
+---
+
+## Useful Commands
+
+Check Git version:
+
+```bash
+git --version
+```
+
+View configuration:
+
+```bash
+git config --list
+```
+
+View username:
+
+```bash
+git config --global user.name
+```
+
+View email:
+
+```bash
+git config --global user.email
+```
+
+---
+
+## Summary
+
+- Download Git from the official website.
+- Install using the default settings.
+- Verify the installation with `git --version`.
+- Configure your username and email.
+- Git is now ready to use.
+
+---
