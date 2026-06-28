@@ -1,0 +1,353 @@
+# Advanced Git Commands
+
+---
+
+## View Commit History (Graph)
+
+Displays commits in a graphical format.
+
+```bash
+git log --oneline --graph --all
+```
+
+---
+
+## Show Differences Between Commits
+
+```bash
+git diff
+```
+
+Compare two commits:
+
+```bash
+git diff commit1 commit2
+```
+
+---
+
+## View Specific Commit Details
+
+```bash
+git show <commit-hash>
+```
+
+Example:
+
+```bash
+git show a1b2c3d
+```
+
+---
+
+## Undo Last Commit (Keep Changes)
+
+```bash
+git reset --soft HEAD~1
+```
+
+---
+
+## Undo Last Commit (Unstage Changes)
+
+```bash
+git reset --mixed HEAD~1
+```
+
+---
+
+## Undo Last Commit (Delete Changes)
+
+```bash
+git reset --hard HEAD~1
+```
+
+---
+
+## Restore Deleted or Modified File
+
+```bash
+git restore filename
+```
+
+---
+
+## Restore All Files
+
+```bash
+git restore .
+```
+
+---
+
+## Revert a Commit
+
+Creates a new commit that reverses a previous commit.
+
+```bash
+git revert <commit-hash>
+```
+
+---
+
+## Stash Current Changes
+
+```bash
+git stash
+```
+
+---
+
+## View Saved Stashes
+
+```bash
+git stash list
+```
+
+---
+
+## Apply Stashed Changes
+
+```bash
+git stash apply
+```
+
+---
+
+## Apply and Remove Stash
+
+```bash
+git stash pop
+```
+
+---
+
+## Delete a Stash
+
+```bash
+git stash drop
+```
+
+---
+
+## Delete All Stashes
+
+```bash
+git stash clear
+```
+
+---
+
+## Rename Current Branch
+
+```bash
+git branch -m new-branch-name
+```
+
+---
+
+## Delete Local Branch
+
+```bash
+git branch -d branch-name
+```
+
+Force delete:
+
+```bash
+git branch -D branch-name
+```
+
+---
+
+## Delete Remote Branch
+
+```bash
+git push origin --delete branch-name
+```
+
+---
+
+## Fetch All Branches
+
+```bash
+git fetch --all
+```
+
+---
+
+## Fetch and Remove Deleted Branches
+
+```bash
+git fetch --all --prune
+```
+
+---
+
+## Add Upstream Repository
+
+```bash
+git remote add upstream <repository-url>
+```
+
+---
+
+## Fetch from Upstream
+
+```bash
+git fetch upstream
+```
+
+---
+
+## Merge Upstream Branch
+
+```bash
+git merge upstream/main
+```
+
+---
+
+## Pull from Upstream
+
+```bash
+git pull upstream main
+```
+
+---
+
+## Cherry-Pick a Commit
+
+Copy a commit from another branch.
+
+```bash
+git cherry-pick <commit-hash>
+```
+
+---
+
+## Rebase Current Branch
+
+```bash
+git rebase main
+```
+
+---
+
+## Continue Rebase
+
+```bash
+git rebase --continue
+```
+
+---
+
+## Abort Rebase
+
+```bash
+git rebase --abort
+```
+
+---
+
+## Create a Tag
+
+```bash
+git tag v1.0
+```
+
+---
+
+## List Tags
+
+```bash
+git tag
+```
+
+---
+
+## Push Tags
+
+```bash
+git push origin --tags
+```
+
+---
+
+## Remove a Tag
+
+```bash
+git tag -d v1.0
+```
+
+---
+
+## Find Lost Commits
+
+```bash
+git reflog
+```
+
+---
+
+## Clean Untracked Files
+
+```bash
+git clean -f
+```
+
+Delete untracked directories too:
+
+```bash
+git clean -fd
+```
+
+---
+
+## View Current Branch
+
+```bash
+git branch --show-current
+```
+
+---
+
+## View Remote Information
+
+```bash
+git remote -v
+```
+
+---
+
+## Force Push
+
+```bash
+git push --force
+```
+
+Safer version:
+
+```bash
+git push --force-with-lease
+```
+
+---
+
+## Git Help
+
+```bash
+git help
+```
+
+or
+
+```bash
+git <command> --help
+```
+
+Example:
+
+```bash
+git merge --help
+```
