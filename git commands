@@ -1,0 +1,397 @@
+# Git Commands
+
+This document contains commonly used Git commands with their purpose and examples.
+
+---
+
+# Check Git Version
+
+Displays the installed Git version.
+
+```bash
+git --version
+```
+
+Example:
+
+```bash
+git version 2.50.1.windows.1
+```
+
+---
+
+# Configure Username
+
+Sets your Git username.
+
+```bash
+git config --global user.name "Your Name"
+```
+
+---
+
+# Configure Email
+
+Sets your Git email.
+
+```bash
+git config --global user.email "your@email.com"
+```
+
+---
+
+# View Git Configuration
+
+Displays all configured Git settings.
+
+```bash
+git config --list
+```
+
+---
+
+# Initialize a Repository
+
+Creates a new Git repository.
+
+```bash
+git init
+```
+
+---
+
+# Clone a Repository
+
+Downloads an existing repository from GitHub.
+
+```bash
+git clone <repository-url>
+```
+
+Example:
+
+```bash
+git clone https://github.com/username/project.git
+```
+
+---
+
+# Check Status
+
+Shows the current state of your repository.
+
+```bash
+git status
+```
+
+---
+
+# Stage a File
+
+Adds a specific file to the staging area.
+
+```bash
+git add filename
+```
+
+Example:
+
+```bash
+git add README.md
+```
+
+---
+
+# Stage All Files
+
+Adds all modified files.
+
+```bash
+git add .
+```
+
+---
+
+# Commit Changes
+
+Saves staged changes.
+
+```bash
+git commit -m "Your commit message"
+```
+
+Example:
+
+```bash
+git commit -m "Added README file"
+```
+
+---
+
+# View Commit History
+
+Displays all commits.
+
+```bash
+git log
+```
+
+---
+
+# View Short Commit History
+
+Displays commits in one line.
+
+```bash
+git log --oneline
+```
+
+---
+
+# Create a Branch
+
+```bash
+git branch branch-name
+```
+
+Example:
+
+```bash
+git branch feature
+```
+
+---
+
+# List All Branches
+
+```bash
+git branch
+```
+
+---
+
+# Switch Branch
+
+```bash
+git checkout branch-name
+```
+
+or
+
+```bash
+git switch branch-name
+```
+
+---
+
+# Create and Switch to a Branch
+
+```bash
+git checkout -b branch-name
+```
+
+or
+
+```bash
+git switch -c branch-name
+```
+
+---
+
+# Merge a Branch
+
+```bash
+git merge branch-name
+```
+
+---
+
+# Delete a Branch
+
+```bash
+git branch -d branch-name
+```
+
+---
+
+# Add Remote Repository
+
+```bash
+git remote add origin <repository-url>
+```
+
+---
+
+# View Remote Repositories
+
+```bash
+git remote -v
+```
+
+---
+
+# Push Changes
+
+```bash
+git push origin main
+```
+
+---
+
+# Push First Time
+
+```bash
+git push -u origin main
+```
+
+---
+
+# Pull Latest Changes
+
+```bash
+git pull origin main
+```
+
+---
+
+# Fetch Changes
+
+Downloads changes without merging.
+
+```bash
+git fetch
+```
+
+---
+
+# Remove a File
+
+```bash
+git rm filename
+```
+
+---
+
+# Rename a File
+
+```bash
+git mv oldname newname
+```
+
+---
+
+# Undo Last Commit (Keep Changes)
+
+```bash
+git reset --soft HEAD~1
+```
+
+---
+
+# Undo Last Commit (Remove Changes)
+
+```bash
+git reset --hard HEAD~1
+```
+
+---
+
+# Restore a File
+
+```bash
+git restore filename
+```
+
+---
+
+# Stash Changes
+
+Temporarily saves uncommitted changes.
+
+```bash
+git stash
+```
+
+---
+
+# Apply Stashed Changes
+
+```bash
+git stash apply
+```
+
+---
+
+# List Stashes
+
+```bash
+git stash list
+```
+
+---
+
+# Delete a Stash
+
+```bash
+git stash drop
+```
+
+---
+
+# Current Branch
+
+```bash
+git branch --show-current
+```
+
+---
+
+# Show Differences
+
+```bash
+git diff
+```
+
+---
+
+# Display Help
+
+```bash
+git help
+```
+
+or
+
+```bash
+git <command> --help
+```
+
+Example:
+
+```bash
+git commit --help
+```
+
+---
+
+# Summary
+
+| Command | Purpose |
+|---------|----------|
+| `git init` | Initialize a repository |
+| `git clone` | Clone a repository |
+| `git status` | Check repository status |
+| `git add` | Stage files |
+| `git commit` | Save changes |
+| `git log` | View commit history |
+| `git branch` | Manage branches |
+| `git checkout` | Switch branches |
+| `git merge` | Merge branches |
+| `git remote` | Manage remotes |
+| `git push` | Upload changes |
+| `git pull` | Download and merge changes |
+| `git fetch` | Download changes only |
+| `git reset` | Undo commits |
+| `git restore` | Restore files |
+| `git stash` | Save temporary changes |
+| `git diff` | View file differences |
