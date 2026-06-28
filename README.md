@@ -64,12 +64,15 @@ The goal of this repository is to:
 ## 📂 Repository Structure
 
 ```
-learn-github
+
+learn-github/
 │
 ├── README.md
-├── notes/
-├── examples/
-└── practice-files/
+├── Git installation
+├── git basics
+├── git commands
+└── Advanced Git Commands
+
 ```
 
 ---
