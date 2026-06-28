@@ -1,0 +1,227 @@
+# Git Basics
+
+## What is Git?
+
+Git is a **distributed version control system (VCS)** that helps developers track changes in files, collaborate with others, and manage different versions of a project.
+
+---
+
+## Why Use Git?
+
+- Track changes in your project
+- Restore previous versions of files
+- Collaborate with other developers
+- Manage multiple features using branches
+- Keep a complete history of your project
+
+---
+
+## Key Git Concepts
+
+### Repository (Repo)
+A repository is a folder where Git tracks your project files and their history.
+
+Example:
+```
+MyProject/
+│── index.html
+│── style.css
+│── script.js
+└── .git/
+```
+
+---
+
+### Working Directory
+
+The folder where you create, edit, and delete files.
+
+---
+
+### Staging Area
+
+A temporary area where you prepare changes before committing them.
+
+Command:
+
+```bash
+git add filename
+```
+
+or
+
+```bash
+git add .
+```
+
+---
+
+### Commit
+
+A commit is a snapshot of your project at a specific point in time.
+
+Command:
+
+```bash
+git commit -m "Initial commit"
+```
+
+---
+
+### Branch
+
+A branch is an independent line of development.
+
+Default branch:
+
+```
+main
+```
+
+Create a branch:
+
+```bash
+git branch feature
+```
+
+---
+
+### Remote Repository
+
+A copy of your repository stored online (e.g., GitHub).
+
+Example:
+
+```
+GitHub Repository
+```
+
+---
+
+## Basic Git Workflow
+
+```
+Create/Edit Files
+        ↓
+git add
+        ↓
+Staging Area
+        ↓
+git commit
+        ↓
+Local Repository
+        ↓
+git push
+        ↓
+GitHub Repository
+```
+
+---
+
+## Common Git Commands
+
+Initialize a repository
+
+```bash
+git init
+```
+
+Clone a repository
+
+```bash
+git clone <repository-url>
+```
+
+Check repository status
+
+```bash
+git status
+```
+
+Stage one file
+
+```bash
+git add filename
+```
+
+Stage all files
+
+```bash
+git add .
+```
+
+Commit changes
+
+```bash
+git commit -m "Commit message"
+```
+
+View commit history
+
+```bash
+git log
+```
+
+View short commit history
+
+```bash
+git log --oneline
+```
+
+Push changes
+
+```bash
+git push origin main
+```
+
+Pull latest changes
+
+```bash
+git pull origin main
+```
+
+---
+
+## Git Lifecycle
+
+```
+Working Directory
+        │
+        ▼
+Staging Area
+        │
+        ▼
+Local Repository
+        │
+        ▼
+Remote Repository (GitHub)
+```
+
+---
+
+## Advantages of Git
+
+- Fast and efficient
+- Free and open source
+- Works offline
+- Easy collaboration
+- Complete project history
+- Supports branching and merging
+
+---
+
+## Summary
+
+Git helps developers:
+
+- Track project changes
+- Save project history
+- Work with teams
+- Restore previous versions
+- Manage code efficiently
+
+---
+
+## Next Topic
+
+➡️ Git Repository (git init)
